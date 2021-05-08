@@ -1,0 +1,221 @@
+<configs>
+	<append xpath="/blocks">
+						
+		<block name="CarRotatingElevator">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="DoorSecure"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="DescriptionKey" value="CarRotatingElevatorDesc"/>
+			<property name="CustomIcon" value="CarRotatingElevator" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/CarRotatingElevator.unity3d?CarRotatingElevator"/>
+			<!-- <property name="ModelOffset" value="1,0,1"/> -->
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,2,5"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Place" value="Door"/>
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+		
+		<block name="CarRotatingElevatorx2">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="DoorSecure"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="DescriptionKey" value="CarRotatingElevatorDesc"/>
+			<property name="CustomIcon" value="CarRotatingElevator" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/CarRotatingElevatorx2.unity3d?CarRotatingElevatorx2"/>
+			<!-- <property name="ModelOffset" value="1,0,1"/> -->
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,4,5"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Place" value="Door"/>
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+		
+		<block name="CarElevator2">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="DoorSecure"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="DescriptionKey" value="CarElevator2Desc"/>
+			<property name="CustomIcon" value="CarRotatingElevator" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/CarElevator2.unity3d?CarElevator2"/>
+			<!-- <property name="ModelOffset" value="1,0,1"/> -->
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,4,5"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Place" value="Door"/>
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+		
+		<block name="CarRotater">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="DoorSecure"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="DescriptionKey" value="CarRotaterDesc"/>
+			<property name="CustomIcon" value="CarRotatingElevator" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/CarRotater.unity3d?CarRotater"/>
+			<!-- <property name="ModelOffset" value="1,0,1"/> -->
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,2,5"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Place" value="Door"/>
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+
+		<block name="CarRotatingElevator Powered">
+			<property name="Class" value="Switch"/>		
+            <property name="DisplayType" value="blockElectrical" />
+            <property name="RequiredPower" value="0"/>
+            <property name="CreativeMode" value="Player"/>
+			<property name="TriggerType" value="Switch"/> 
+			<property name="CustomIcon" value="CarRotatingElevator" />
+			<property name="Material" value="Mmetal"/>
+			<property name="PassThroughDamage" value="true"/>
+		    <property name="LightOpacity" value="1"/>
+			<property name="Collide" value="movement,melee,rocket,bullet" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/CarRotatingElevator.unity3d?CarRotatingElevator" />
+			<property name="DescriptionKey" value="CarRotatingElevator PoweredDesc"/>
+			<property name="MultiBlockDim" value="3,2,5"/>
+			<property name="MaxDamage" value="21000"/>
+			<property name="Tag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Place" value="Door"/>
+			<property name="RequiredPower" value="5"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="Stabilitysupport" value="true"/>
+			<property name="OpenSound" value="open_door_wood" />
+			<property name="CloseSound" value="close_door_wood" />
+			<property name="ImposterExchange" value="imposterBlock" param1="9"/>
+			<property class="RepairItems"><property name="resourceForgedIron" value="20" /></property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>      
+			<property name="Group" value="Building,Science"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+		</block>
+		
+		<block name="CarRotatingElevatorx2 Powered">
+			<property name="Class" value="Switch"/>		
+            <property name="DisplayType" value="blockElectrical" />
+            <property name="RequiredPower" value="0"/>
+            <property name="CreativeMode" value="Player"/>
+			<property name="TriggerType" value="Switch"/> 
+			<property name="CustomIcon" value="CarRotatingElevator" />
+			<property name="Material" value="Mmetal"/>
+			<property name="PassThroughDamage" value="true"/>
+		    <property name="LightOpacity" value="1"/>
+			<property name="Collide" value="movement,melee,rocket,bullet" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/CarRotatingElevatorx2.unity3d?CarRotatingElevatorx2" />
+			<property name="DescriptionKey" value="CarRotatingElevatorx2 PoweredDesc"/>
+			<property name="MultiBlockDim" value="3,4,5"/>
+			<property name="MaxDamage" value="21000"/>
+			<property name="Tag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Place" value="Door"/>
+			<property name="RequiredPower" value="5"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="Stabilitysupport" value="true"/>
+			<property name="OpenSound" value="open_door_wood" />
+			<property name="CloseSound" value="close_door_wood" />
+			<property name="ImposterExchange" value="imposterBlock" param1="9"/>
+			<property class="RepairItems"><property name="resourceForgedIron" value="20" /></property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>      
+			<property name="Group" value="Building,Science"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+		</block>
+		
+		<block name="CarElevator2 Powered">
+			<property name="Class" value="Switch"/>		
+            <property name="DisplayType" value="blockElectrical" />
+            <property name="RequiredPower" value="0"/>
+            <property name="CreativeMode" value="Player"/>
+			<property name="TriggerType" value="Switch"/> 
+			<property name="CustomIcon" value="CarRotatingElevator" />
+			<property name="Material" value="Mmetal"/>
+			<property name="PassThroughDamage" value="true"/>
+		    <property name="LightOpacity" value="1"/>
+			<property name="Collide" value="movement,melee,rocket,bullet" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/CarElevator2.unity3d?CarElevator2" />
+			<property name="DescriptionKey" value="CarElevator2 PoweredDesc"/>
+			<property name="MultiBlockDim" value="3,4,5"/>
+			<property name="MaxDamage" value="21000"/>
+			<property name="Tag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Place" value="Door"/>
+			<property name="RequiredPower" value="5"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="Stabilitysupport" value="true"/>
+			<property name="OpenSound" value="open_door_wood" />
+			<property name="CloseSound" value="close_door_wood" />
+			<property name="ImposterExchange" value="imposterBlock" param1="9"/>
+			<property class="RepairItems"><property name="resourceForgedIron" value="20" /></property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>      
+			<property name="Group" value="Building,Science"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+		</block>
+		
+		<block name="CarRotater Powered">
+			<property name="Class" value="Switch"/>		
+            <property name="DisplayType" value="blockElectrical" />
+            <property name="RequiredPower" value="0"/>
+            <property name="CreativeMode" value="Player"/>
+			<property name="TriggerType" value="Switch"/> 
+			<property name="CustomIcon" value="CarRotatingElevator" />
+			<property name="Material" value="Mmetal"/>
+			<property name="PassThroughDamage" value="true"/>
+		    <property name="LightOpacity" value="1"/>
+			<property name="Collide" value="movement,melee,rocket,bullet" />
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/CarRotater.unity3d?CarRotater" />
+			<property name="DescriptionKey" value="CarRotater PoweredDesc"/>
+			<property name="MultiBlockDim" value="3,2,5"/>
+			<property name="MaxDamage" value="21000"/>
+			<property name="Tag" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Place" value="Door"/>
+			<property name="RequiredPower" value="5"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="Stabilitysupport" value="true"/>
+			<property name="OpenSound" value="open_door_wood" />
+			<property name="CloseSound" value="close_door_wood" />
+			<property name="ImposterExchange" value="imposterBlock" param1="9"/>
+			<property class="RepairItems"><property name="resourceForgedIron" value="20" /></property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>      
+			<property name="Group" value="Building,Science"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+		</block>
+	
+	</append>
+</configs>

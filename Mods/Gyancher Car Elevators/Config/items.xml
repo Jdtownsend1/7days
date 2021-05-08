@@ -1,0 +1,86 @@
+<configs>
+	<append xpath="/items">
+	
+	<!-- Schematics-->
+	
+    <item name="CarRotatingElevatorSchematic">
+      <property name="Extends" value="schematicMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="CarRotatingElevator"/>
+      <property name="Unlocks" value="CarRotatingElevator"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="CarRotatingElevator" operation="set" value="1" />
+      </effect_group>
+    </item>
+	
+	<item name="CarElevator2Schematic">
+		<property name="Extends" value="schematicMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="CarRotatingElevator"/>
+		<property name="Unlocks" value="CarRotatingElevatorx2"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="CarRotatingElevatorx2" operation="set" value="1" />
+		</effect_group>
+	</item>
+	
+	<item name="CarRotatingElevatorx2Schematic">
+		<property name="Extends" value="schematicMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="CarRotatingElevator"/>
+		<property name="Unlocks" value="CarRotatingElevatorx2"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="CarRotatingElevatorx2" operation="set" value="1" />
+		</effect_group>
+	</item>
+	
+	  <item name="CarRotaterSchematic">
+		<property name="Extends" value="schematicMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="CarRotatingElevator"/>
+		<property name="Unlocks" value="CarRotater"/>
+		<effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="CarRotater" operation="set" value="1" />
+		</effect_group>
+    </item>
+	
+	<item name="CarRotatingElevator PoweredSchematic">
+      <property name="Extends" value="schematicMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="CarRotatingElevator"/>
+      <property name="Unlocks" value="CarRotatingElevator Powered"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="CarRotatingElevator Powered" operation="set" value="1" />
+      </effect_group>
+    </item>
+	
+	<item name="CarElevator2 PoweredSchematic">
+		<property name="Extends" value="schematicMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="CarRotatingElevator"/>
+		<property name="Unlocks" value="CarElevator2 Powered"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="CarElevator2 Powered" operation="set" value="1" />
+		</effect_group>
+	</item>
+	
+	<item name="CarRotatingElevatorx2 PoweredSchematic">
+		<property name="Extends" value="schematicMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="CarRotatingElevator"/>
+		<property name="Unlocks" value="CarRotatingElevatorx2 Powered"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="CarRotatingElevatorx2 Powered" operation="set" value="1" />
+		</effect_group>
+	</item>
+	
+	  <item name="CarRotater PoweredSchematic">
+		<property name="Extends" value="schematicMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="CarRotatingElevator"/>
+		<property name="Unlocks" value="CarRotater"/>
+		<effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="CarRotater" operation="set" value="1" />
+		</effect_group>
+    </item>
+	</append>
+</configs>
