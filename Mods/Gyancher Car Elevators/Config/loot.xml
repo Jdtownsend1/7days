@@ -1,9 +1,0 @@
-<configs>
-
-    <insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsModsRare']/item[@name='drugHerbalAntibioticsSchematic']" >
-        <item name="CarRotatingElevatorSchematic" count="1" prob="1"/>
-		<item name="CarRotatingElevatorx2Schematic" count="1" prob="1"/>
-		<item name="CarRotaterSchematic" count="1" prob="1"/>
-    </insertAfter>
-    
-</configs>
